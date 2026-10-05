@@ -1,0 +1,8 @@
+[package]
+name = "thps-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+thug2 = { path = "crates/thug2" }
+thps-shared = { path = "crates/shared" }

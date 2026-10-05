@@ -1,0 +1,8 @@
+[build]
+target = "i686-pc-windows-msvc"
+
+[lib]
+crate-type = ["cdylib"]
+
+[llvm]
+use-linker = "lld"
