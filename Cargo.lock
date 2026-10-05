@@ -308,6 +308,7 @@ dependencies = [
 [[package]]
 name = "egui-d3d9"
 version = "0.3.9"
+source = "git+https://github.com/sourcethps/egui-d3d9?branch=feature%2Ffix-alt-tab-crash#c2e2bddda9c43f3e740985626fb0779f979e5e84"
 dependencies = [
  "clipboard",
  "egui",

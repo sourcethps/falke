@@ -17,7 +17,7 @@ log = "0.4.17"
 simplelog = "0.12.1"
 anyhow = "1.0.98"
 egui = "0.31.0"
-egui-d3d9 = {path = "../egui-d3d9/egui-d3d9"}
+egui-d3d9 = { git = "https://github.com/sourcethps/egui-d3d9", branch = "feature/fix-alt-tab-crash" }
 nalgebra-glm = "0.20.0"
 toy-arms = {git = "https://github.com/vxcall/toy-arms"}
 [build-dependencies]
