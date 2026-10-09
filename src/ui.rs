@@ -3,7 +3,10 @@ use egui::{
     Vec2,
 };
 use std::{
-    sync::{Mutex, OnceLock},
+    sync::{
+        Mutex, OnceLock,
+        atomic::{AtomicU8, Ordering},
+    },
     time::Instant,
 };
 use windows::Win32::UI::WindowsAndMessaging::ShowCursor;
@@ -1211,13 +1214,14 @@ pub fn ui_render_loop(ctx: &eguiContext, _i: &mut i32) {
         );
     }
 
+    let has_camera = game::camera().is_some();
     if !ui.is_showing() {
         return;
     }
 
     // No camera yet means freecam has never been entered, so there is nothing
     // to author against.
-    if game::camera().is_some() {
+    if has_camera {
         ctx.debug_painter().text(
             Pos2::new(0., 0.),
             Align2::LEFT_TOP,

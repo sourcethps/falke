@@ -5,4 +5,5 @@ edition = "2024"
 
 [dependencies]
 thug2 = { path = "crates/thug2" }
+thps4 = { path = "crates/thps4" }
 thps-shared = { path = "crates/shared" }
