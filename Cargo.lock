@@ -1745,11 +1745,16 @@ name = "thps-rs"
 version = "0.1.0"
 dependencies = [
  "thps-shared",
+ "thps4",
  "thug2",
 ]
 
 [[package]]
 name = "thps-shared"
+version = "0.1.0"
+
+[[package]]
+name = "thps4"
 version = "0.1.0"
 
 [[package]]

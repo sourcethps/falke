@@ -1,5 +1,5 @@
 [workspace]
-members = [".", "thps-rs", "thps-rs/crates/thug2", "thps-rs/crates/shared"]
+members = [".", "thps-rs", "thps-rs/crates/thug2", "thps-rs/crates/thps4", "thps-rs/crates/shared"]
 
 [package]
 name = "falke"
